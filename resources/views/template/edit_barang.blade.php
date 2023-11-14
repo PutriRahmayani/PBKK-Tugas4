@@ -21,52 +21,52 @@
                                     <input
                                         type="email"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="kode_barang"
                                         placeholder="Kode Barang"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="nama_barang"
                                         placeholder="Nama Barang"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="merek"
                                         placeholder="Merek"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="number"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="jumlah"
                                         placeholder="Jumlah"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="asal_barang"
                                         placeholder="Asal Barang"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="kondisi"
                                         placeholder="Kondisi"
                                     />
                                 </div>

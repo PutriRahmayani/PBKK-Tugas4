@@ -7,16 +7,13 @@
 <div class="container-fluid">
 
     @include('template/include/header')
-
-    <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
     
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <div class="d-flex justify-content-between align-items-center">
                 <h6 class="m-0 font-weight-bold text-primary">Data Barang</h6>
-                <a href="{{ url('/template/tambah_barang') }}" class="btn btn-warning"> <i class="fas fa-plus"></i> Tambah </a>
+                <a href="{{ url('/template/tambah_barang') }}" class="btn btn-primary"> <i class="fas fa-plus"></i> Tambah </a>
             </div>
         </div>        
         <div class="card-body">
@@ -32,7 +29,7 @@
                             <th>Asal Barang</th>
                             <th>Kondisi</th>
                             <th>Ketersediaan</th>
-                            <th>Aksi</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,9 +45,9 @@
                             <td>{{ $barang->asal_barang }}</td>
                             <td>{{ $barang->kondisi }}</td>
                             <td>{{ $barang->ketersediaan }}</td>
-
+                            
                             <td>
-                                <a href="/template/{{ $barang->kode_barang }}/edit_barang" class="btn btn-success">
+                                <a href="/template/{{ $barang->kode_barang }}/edit_barang" class="btn btn-warning">
                                     <i class="fas fa-edit"></i> Edit </a>
                             
                                 <form action="/template/{{ $barang->kode_barang }}" method="POST">
@@ -59,7 +56,7 @@
                                     <button type="submit" class="btn btn-danger">
                                         <i class="fas fa-trash-alt"></i> Delete </button>
                                 </form>
-                            </td>
+                            </td> 
                         </tr>
                         @endforeach
                     </tbody>

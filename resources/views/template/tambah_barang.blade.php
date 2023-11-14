@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- Your head content here -->
-</head>
 <body class="bg-gradient-primary">
     <!-- Page Wrapper -->
     <div id="wrapper">
         @include('template/include/sidebar')
 
-        <div class="container">
+        <div class="container" style="max-width: 800px;">
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
@@ -19,67 +14,64 @@
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="kode_barang"
                                         placeholder="Kode Barang"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="nama_barang"
                                         placeholder="Nama Barang"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="merk"
                                         placeholder="Merek"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="number"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="jumlah"
                                         placeholder="Jumlah"
                                     />
                                 </div>
 
                                 <div class="form-group">
                                     <input
-                                        type="email"
+                                        type="text"
                                         class="form-control form-control-user"
-                                        id="exampleInputEmail"
+                                        id="asal_barang"
                                         placeholder="Asal Barang"
                                     />
                                 </div>
 
                                 <div class="form-group">
-                                    <input
-                                        type="email"
-                                        class="form-control form-control-user"
-                                        id="exampleInputEmail"
-                                        placeholder="Kondisi"
-                                    />
+                                    <select class="form-control form-control-user" id="kondisi">
+                                        <option value="">Kondisi</option>
+                                        <option value="rusak">Rusak</option>
+                                        <option value="baik">Baik</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-group">
-                                    <input
-                                        type="email"
-                                        class="form-control form-control-user"
-                                        id="exampleInputEmail"
-                                        placeholder="Ketersediaan"
-                                    />
+                                    <select class="form-control form-control-user" id="kondisi">
+                                        <option value="">Ketersediaan</option>
+                                        <option value="ada">Ada</option>
+                                        <option value="tidak">Tidak</option>
+                                    </select>
                                 </div>
-
                                 <a href="index.html" class="btn btn-facebook btn-user btn-block">
                                     <i class="fab  fa-fw"></i> Tambah </a>
                             </div>
@@ -89,9 +81,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <div id="footer" style="position: fixed; bottom: 0; width: 100%;">
         @include('template/include/footer')
     </div>
 </body>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\barang;
+use App\Models\Barang;
 use Illuminate\Http\Request;
 
 class BarangController extends Controller
@@ -13,7 +13,10 @@ class BarangController extends Controller
     }
 
     public function edit(){
-        $barangs = Barang::all();
-        return view('template/edit_barang', compact('barangs'));
+        return view('template/edit_barang',);
+    }
+
+    public function create(){
+        return view('template/tambah_barang', );
     }
 }
